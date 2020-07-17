@@ -50,6 +50,20 @@ if (howMany[i] < 8 && howMany[i] > 128) {
 }
 */
 
+function userChar() {
+  var howMany = prompt("How many characters would you like your password to contain?");
+
+  if (isNaN(howMany) || howMany < 8 || howMany > 128)  {
+    alert("Please enter a valid number.")
+  };
+
+var randomFunction = {
+  lower: getRandomLower,
+  upper: getRandomUpper,
+  number: getRandomNumber,
+  symbol: getRandomSymbol
+};
+
 // Functions
 
 function getRandomLower() {
@@ -76,7 +90,8 @@ console.log(getRandomNumber());
 function getRandomSymbol() {
   var randomSymbol = " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
   return randomSymbol[Math.floor(Math.random() * randomSymbol.length)];
-
 }
 
-console.log(getRandomNumber());
+console.log(getRandomSymbol());
+
+}
