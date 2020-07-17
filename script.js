@@ -50,12 +50,32 @@ if (howMany[i] < 8 && howMany[i] > 128) {
 }
 */
 
-function userChar() {
+function userLength() {
   var howMany = prompt("How many characters would you like your password to contain?");
 
   if (isNaN(howMany) || howMany < 8 || howMany > 128)  {
     alert("Please enter a valid number.")
-  };
+  }
+
+function userChar() {
+  var confirmChar = confirm("Click OK to confirm including special characters")
+
+  }
+
+function userNum() {
+  var confirmNum = confirm("Click OK to confirm including numeric characters")
+}
+
+function userLower() {
+  var confirmLower = confirm("Click OK to confirm using lowercase characters")
+}
+
+function userUpper() {
+  var confirmUpper = confirm("Click OK to confirm using uppercase characters")
+}
+
+
+
 
 var randomFunction = {
   lower: getRandomLower,
