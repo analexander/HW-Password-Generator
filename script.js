@@ -50,30 +50,18 @@ if (howMany[i] < 8 && howMany[i] > 128) {
 }
 */
 
+//variables
+var confirmChar = confirm("Click OK to confirm using special charaters")
+var confirmNum = confirm("Click OK to confirm including numeric characters")
+var confirmLower = confirm("Click OK to confirm using lowercase characters")
+var confirmUpper = confirm("Click OK to confirm using uppercase characters")
+
 function userLength() {
   var howMany = prompt("How many characters would you like your password to contain?");
 
   if (isNaN(howMany) || howMany < 8 || howMany > 128)  {
     alert("Please enter a valid number.")
   }
-
-function userChar() {
-  var confirmChar = confirm("Click OK to confirm including special characters")
-
-  }
-
-function userNum() {
-  var confirmNum = confirm("Click OK to confirm including numeric characters")
-}
-
-function userLower() {
-  var confirmLower = confirm("Click OK to confirm using lowercase characters")
-}
-
-function userUpper() {
-  var confirmUpper = confirm("Click OK to confirm using uppercase characters")
-}
-
 
 
 
@@ -84,7 +72,19 @@ var randomFunction = {
   symbol: getRandomSymbol
 };
 
-// Functions
+function generatePassword(lower, upper, number, symbol, length) {
+  var generatedPassword = "";
+
+  var confirmCount = (lower + upper + number + symbol)
+
+  var confirmArray = [confirmChar, confirmNum, confirmLower, confirmUpper];
+}
+
+console.log(confirmArray);
+
+
+
+// Random gen functions
 
 function getRandomLower() {
   var lowerCase = "abcdefghijklmnopqrstuvwxyz"
