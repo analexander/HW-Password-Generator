@@ -61,7 +61,7 @@ function generateNewPassword()
   }
 
   // creates the password
-  // loop through number of characters in the password to create the password
+  // loop through number of characters in array to create the password
   var password = "";
 
   for(i = 0; i < howMany; i++)
@@ -71,7 +71,7 @@ function generateNewPassword()
 
   }
 
-  // password appears in box
+  // password appears in div
   var passwordText = document.querySelector("#password");  
   passwordText.value = password;
 }
