@@ -34,7 +34,7 @@ function generateNewPassword()
   }
 
   // confirm length
-  var howMany = prompt("How many characters would you like your password to contain? (8 - 128");
+  var howMany = prompt("How many characters would you like your password to contain? (8 - 128)");
   while (isNaN(howMany) || howMany < 8 || howMany > 128)
   {
       alert("Please enter a valid number.");
