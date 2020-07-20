@@ -2,13 +2,6 @@
 //generate button
 var generateBtn = document.querySelector("#generate");
 
-//password variables
-var passwordLength;
-var passwordChar; 
-var passwordNum;
-var passwordLower;
-var passwordUpper;
-
 //arrays
 var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
