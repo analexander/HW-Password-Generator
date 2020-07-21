@@ -8,7 +8,7 @@ var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var randomNumber = "0123456789";
 var randomSymbol = "[ !#$%&'()*+,-./:;<=>?@[\]^_`{|}~]";
 
-//confirm length prompt
+//generate password function
 function generateNewPassword()
 {
   //confirm criteria
@@ -30,7 +30,7 @@ function generateNewPassword()
   var howMany = prompt("How many characters would you like your password to contain? (8 - 128)");
   while (isNaN(howMany) || howMany < 8 || howMany > 128)
   {
-      alert("Please enter a valid number.");
+    howMany = prompt("How many characters would you like your password to contain? (8-128)");
   }
 
   // create array of valid characters
